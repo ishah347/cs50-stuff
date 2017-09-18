@@ -49,6 +49,7 @@ int main(int argc, string argv[])
     }
     else
     {
+        printf("Usage: ./caesar k\n");
         // handle cases when argc doesn't equal 2
         return 1;
     }
