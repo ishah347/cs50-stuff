@@ -6,7 +6,7 @@
 
 int main(int argc, string argv[])
 {
-    // Differentaite between a valid entry and an invalid entry
+    // Differentiate between a valid entry and an invalid entry
     if (argc == 2)
     {
         // Use argv[1] value as key integer
@@ -16,7 +16,7 @@ int main(int argc, string argv[])
         {
             pl = get_string("plaintext: ");
         }
-        // Set up "ciphertext" prompt
+        // Set up "ciphertext" segment
         printf("ciphertext: ");
         for (int i = 0, n = strlen(pl); i < n; i++)
         {
