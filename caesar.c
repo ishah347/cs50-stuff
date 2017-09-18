@@ -22,10 +22,10 @@ int main(int argc, string argv[])
         {
             char f = pl[i];
             // Ensure plaintext entry is alphabetical
-            if (isalpha(pl[i]))
+            if (isalpha(f))
             {
                 // Differentiate between uppercase and lowercase entries in order to preserve case
-                if (isupper(pl[i]))
+                if (isupper(f))
                 {
                     // Use key to instigate code
                     // Go from ASCII to alphabetical index to ASCII
@@ -33,7 +33,7 @@ int main(int argc, string argv[])
                     // Print the ciphertext
                     printf("%c", C);
                 }
-                if (islower(pl[i]))
+                if (islower(f))
                 {
 
                     // Use key to instigate code
