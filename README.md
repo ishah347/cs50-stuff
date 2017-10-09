@@ -22,7 +22,7 @@ The use of "for (int c = fgetc(file); c != EOF; c = fgetc(file))" means that fge
 
 ## Why do you think we used `fgetc` to read each word's characters one at a time rather than use `fscanf` with a format string like `"%s"` to read whole words at a time? Put another way, what problems might arise by relying on `fscanf` alone?
 
-fscanf reads until spaces, so it will include punctuation and such as part of the words.
+fscanf reads until spaces, so it will include punctuation and such as part of the words, which are invlaid characters.
 
 ## Why do you think we declared the parameters for `check` and `load` as `const` (which means "constant")?
 
