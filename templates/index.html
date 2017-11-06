@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table style = "width: 100%">
+        <thead>
+            <tr>
+                <th>Stocks Owned</th>
+                <th>Shares Owned</th>
+                <th>Current Price</th>
+                <th>Total Stock Value</th>
+            </tr>
+            <tr>
+                <td>
+                    {% for stock in stocks %}
+                        <p>{{stock.name}}</p>
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for stock in stocks %}
+                        <p>{{stock.shares}}</p>
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for stock in stocks %}
+                        <p>{{stock.price}}</p>
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for stock in stocks %}
+                        <p>{{stock.value}}</p>
+                    {% endfor %}
+                </td>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <p>Current Balance: {{stocks[0].cash}}</p>
+                <p>Total Value: {{stocks[0].total}}</p>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}
