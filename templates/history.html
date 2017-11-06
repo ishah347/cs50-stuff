@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table style = "width: 100%">
+        <thead>
+            <tr>
+                <th>Bought or Sold</th>
+                <th>Stocks</th>
+                <th>Number of Shares</th>
+                <th>Price</th>
+                <th>Date of Transaction</th>
+            </tr>
+            <tr>
+                <td>
+                    {% for stock in stocks %}
+                        <p>{{stock.bs}}</p>
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for stock in stocks %}
+                        <p>{{stock.symbol}}</p>
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for stock in stocks %}
+                        <p>{{stock.shares}}
+                    </p>{% endfor %}
+                </td>
+                <td>
+                    {% for stock in stocks %}
+                        <p>{{stock.price}}</p>
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for stock in stocks %}
+                        <p>{{stock.date}}</p>
+                    {% endfor %}
+                </td>
+            </tr>
+        </thead>
+    </table>
+{% endblock %}
