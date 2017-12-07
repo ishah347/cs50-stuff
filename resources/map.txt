@@ -1,0 +1,22 @@
+		LeaveCaveRoom
+		SageRoom	SnakePitRoom
+		DavidMalanRoom
+Find50GoldRoom	OgreRoom	DragonRoom	SageRoom	HealingRoom
+	SageRoom	Find5GoldRoom	EmptyCavePath	CyclopsRoom	EmptyCavePath
+		GiantSpiderRoom	GiantSpiderRoom	OgreRoom
+			EmptyCavePath	EmptyCavePath	SageRoom	Find10GoldRoom
+					DragonRoom	SnakePitRoom
+SageRoom	CyclopsRoom	OgreRoom	HealingRoom	DragonRoom	FindMasterSwordRoom
+EmptyCavePath
+GiantSpiderRoom	EmptyCavePath	Find10GoldRoom
+		GiantSpiderRoom
+	SageRoom	CyclopsRoom	EmptyCavePath
+EmptyCavePath	GiantSpiderRoom	StartingRoom	SageRoom	FindDaggerRoom
+	Find5GoldRoom	EmptyCavePath	EmptyCavePath	GiantSpiderRoom
+	EmptyCavePath		OgreRoom	EmptyCavePath
+	Find10GoldRoom		SnakePitRoom	GiantSpiderRoom
+HealingRoom	CyclopsRoom	EmptyCavePath	SageRoom
+			Find5GoldRoom
+		HealingRoom	GiantSpiderRoom	OgreRoom	FindSwordRoom
+					Find50GoldRoom	DragonRoom	SnakePitRoom
+						HealingRoom

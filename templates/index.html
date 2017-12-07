@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link href="/static/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="w3-cell">
+            <div class="w3-container w3-cell">
+                <h1>ESCAPE THE CAVE</h1>
+                <p>{{firsttext}}</p>
+                <p>{{nexttext}}</p>
+                {% for item in items %}
+                    <p>{{item}}</p>
+                {% endfor %}
+                <p>{{thentext}}</p>
+                <form action='/' method='post'>
+                    <p>Choose an option</p>
+                    <input type="submit" name="btn_submit" value='up' /><br><br>
+                    <input type="submit" name="btn_submit" value='left' />
+                    <input type="submit" name="btn_submit" value='down' />
+                    <input type="submit" name="btn_submit" value='right' /><br><br>
+                    <input type="submit" name="btn_submit" value='attack' />
+                    <input type="submit" name="btn_submit" value='flee' />
+                    <input type="submit" name="btn_submit" value='inventory' />
+                </form>
+            </div>
+            <div class="w3-container w3-cell">
+                {% for action in availableactions %}
+                    <p>{{action}}</p>
+                {% endfor %}
+            </div>
+            <div class="w3-container w3-cell">
+                <img src="/static/{{picture}}.jpg">
+            </div>
+        </div>
+    </body>
+</html>
